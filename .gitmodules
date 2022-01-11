@@ -1,3 +1,6 @@
 [submodule "arch-bootstrap"]
 	path = arch-bootstrap
 	url = https://github.com/tokland/arch-bootstrap
+[submodule "nss-altfiles"]
+	path = nss-altfiles
+	url = https://github.com/aperezdc/nss-altfiles
