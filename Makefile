@@ -67,8 +67,9 @@ $(HEADS)/extra: $(HEADS)/bootstrap
 
 $(HEADS)/bootstrap: $(REPO_TEMP)/config
 	rm -fr $(ROOT)
-	cp -a ../myarch-builder $(ROOT)  # TODO
-	rm -vf myarch-builder/dev/*
+	#cp -a ../myarch-builder $(ROOT)  # TODO
+	./arch-bootstrap/arch-bootstrap.sh $(ROOT)
+	rm -vf $(ROOT)/dev/*
 	ostree --repo=$(REPO_TEMP) commit --branch=bootstrap $(ROOT)
 
 $(REPO_TEMP)/config:
