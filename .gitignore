@@ -1,5 +1,4 @@
-arch-repo
-arch-root/
-temp-repo
-arch-repo
+*-repo/
+*-root/
 pacman
+apt
